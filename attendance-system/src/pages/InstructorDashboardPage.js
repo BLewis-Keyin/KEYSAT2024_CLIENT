@@ -6,6 +6,7 @@ import { useAuth } from "../auth/auth";
 import { IoHomeOutline } from "react-icons/io5";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { FaPlusMinus } from "react-icons/fa6";
+const username = localStorage.getItem("username");
 
 function InstructorDashboardPage() {
   const auth = useAuth();
@@ -38,7 +39,7 @@ function InstructorDashboardPage() {
  
             <div className="admin-dash-main-content">
               <h1>Instructor Dashboard</h1>
-              <p>Welcome, {auth.user}!</p>
+              <p>Welcome, {username}!</p>
             </div>
  
         </div>

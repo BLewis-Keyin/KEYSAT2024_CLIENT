@@ -44,6 +44,7 @@ function LoginPage() {
       const roles = JSON.stringify(response.data.roles);
       localStorage.setItem('authorization', authHeader); // Store the token
       localStorage.setItem('roles', roles);
+      localStorage.setItem('username', username);
 
       onLoginSuccess();
     } catch (error) {

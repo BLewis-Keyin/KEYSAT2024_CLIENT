@@ -18,6 +18,7 @@ export const AuthProvider = ({ children }) => {
       });
       const { authorization, roles } = response.data;
       localStorage.setItem('auth', authorization);
+      localStorage.setitem('username', username)
       setUser({ username, roles });
     } catch (error) {
       console.error('Login failed:', error);

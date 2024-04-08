@@ -144,10 +144,12 @@ code {
   /* width: calc(100% - 256px);
   height: 94vh; */
   /* margin-left: 256px; */
+  bottom: 650px;
+  left: 100px;
+  position: absolute;
+  margin-top: 1px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; /* Change to 100vh */
   margin-left: 256px; /* Adjust margin to push content away from the navbar */
 }
 
