@@ -36,7 +36,7 @@ function LoginPage() {
       //   message: "Logged in successfully.",
       // };
       //const response = await auth.login(data.username, data.password);
-      const response = await axios.post('http://127.0.0.1:8080/auth/login', {
+      const response = await axios.post('http://api.keysat.blcode.net/auth/login', {
         username,
         password,
       });
